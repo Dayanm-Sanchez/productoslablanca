@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnicería La Blanca  </title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilojuegos.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+   
+</head>
+<body>
+
+    <header class="hero" id="inicio">
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="logo2.png" alt="Logo La Blanca" class="logo-imagen">
+            <h1>La Blanca</h1> 
+        </div>
+
+        <button class="hamburger-button" id="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="hamburger-icon">☰</span>
+        </button>
+        <nav>
+            <ul class="nav-links" id="primary-navigation">
+                    <li><a href="#navideno">Navidad</a></li>
+                    <li><a href="#cortes">Cortes Premium</a></li>
+                    <li><a href="#Aves-Cerdo">pollo </a></li> 
+                    <li><a href="#Cerdo"> Cerdo</a></li> 
+                    <li><a href="#Res"> Res</a></li> 
+                    <li><a href="#juego">Juego de Temperatura</a><a href="#reflejos"> Reflejos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+             <button id="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" class="hamburger-button">
+                 <div class="bar"></div>
+                 <div class="bar"></div>
+                 <div class="bar"></div>
+            </button>
+        </div>
+        
+        <div class="hero-content">
+            <h2>La Blanca</h2>
+            <h3>carniceria</h3>
+            <h3>La Mejor Selección de Carnes Frescas</h3>
+            <a href="#contacto" class="cta-button">¡Haga su Pedido Ahora!</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="navideno" class="seccion-navidena">
+            <h1>🎄 Especiales de Temporada Navideña 🎄</h1>
+            <div class="cortes-grid">
+                <div class="corte-item">
+                    <img src="pierna y lomo.png" alt="Pierna y lomo">
+                    <h4>Pierna y Lomo  Relleno</h4>
+                    <p>Tu eliges cual de nuestra variedad de salsa quieres<br>y con nuestro relleno especial.</p>
+                   
+                </div>
+                <div class="corte-item">
+                    <img src="costillar.png" alt="Costillar">
+                    <h4>Costillar</h4>
+                    <p>Un clásico festivo. Mejor aun con una de nuestras salsas.</p>
+                </div>
+                
+                <div class="corte-item">
+                    <img src="pollo.png" alt="pollo">
+                    <h4>Pollo Relleno</h4>
+                    <p>Elige cual de nuestro rellenos ya sea dulce o salado<br>al igual de nuestra variedad de salsas </p>
+                    <h4>Pregunta por el relleno para el pavo </h4>
+                    
+                </div>
+                <div class="corte-item">
+                    <img src="complemento.jpeg" alt="Pierna de Cerdo Adobada">
+                    <h4>Otros Productos </h4>
+                    <p>✨ Nuez <br>✨ Pasas<br>✨ Ciruela Pasa<br>✨ Almentra<br>✨ Chiles<br>✨ Especies</p>
+                    
+                </div>
+
+            </div>
+        </div>
+        <h1>Listo para hornear </h1>
+
+        <div class="opciones-horneado">
+            <button id="btn-salsas" class="opcion-button">SALSAS</button>
+            <button id="btn-rellenos" class="opcion-button">RELLENOS</button>
+        </div>
+
+        <div id="salsas-dropdown" class="opciones-dropdown">
+            <div class="dropdown-content">
+                <h3>Nuestras Salsas </h3>
+                <ul>
+                    <li>Enchilado<span class="opcion-detalle">⭐Mango Habanero</span></li>
+                    <li>A la Ciruela<span class="opcion-detalle">⭐Mango Morita</span></li>
+                    <li>BBQ<span class="opcion-detalle">⭐Tamarindo Morita</span></li>
+                    <li>A la Naranja<span class="opcion-detalle"> ⭐Tamarindo Chipotle</span></li>
+                </ul>
+                <a href="#" class="cerrar-dropdown">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="rellenos-dropdown" class="opciones-dropdown">
+            
+            <div class="dropdown-content">
+                <h3>Nuestros Rellenos Especiales</h3>
+                <ul>
+            <li>
+                <strong>SALADO:</strong>
+                <ul class="lista-ingredientes"> 
+                    <li>Carne Molida, Tocino, Papa, Zanahoria y Chicharos</li>
+                    
+                </ul>
+            </li>
+            
+            <li>
+                <strong>DULCE:</strong>
+                <ul class="lista-ingredientes">
+                    <li>Carne Molida, Nuez, Almendras, Ciruela Pasa, Pasas, Piña, Durazno y Manzana</li>
+                    
+                </ul>
+            </li>
+        </ul>
+                <a href="#" class="cerrar-dropdown">Cerrar</a>
+            </div>
+        </div>
+
+        <p class="nota-navidena">¡Haga sus pedidos navideños antes del 20 para el 24 y del 27 para el 31 de diciembre!</p>
+    </section>
+           
+
+        
+        <section class="seccion-cortes" id="cortes">
+            <h2>Cortes Premium</h2><h1>De esta seccion hacer su pedido con anticipacion.</h1>
+             
+            <div class="cortes-grid">
+                <div class="corte-item">
+                    <img src="imagen-ribeye.png" alt="Rib Eye">
+                    <h4>Rib Eye</h4>
+                 </div>
+                <div class="corte-item">
+                    <img src="T-bone.png" alt="T-bone">
+                    <h4>T-bone</h4>
+                  </div>
+                <div class="corte-item">
+                    <img src="Picaña.png" alt="Porterhouse">
+                    <h4>Picaña</h4>
+                 </div>
+                <div class="corte-item">
+                    <img src="Porterhouse.png" alt="Porterhouse">
+                    <h4>Porterhouse</h4>
+                </div>
+                <div class="corte-item">
+                    <img src="New-york.png" alt="New York">
+                    <h4>New York</h4>
+                 </div>
+               
+                <div class="corte-item">
+                    <img src="Filet-Mignon.png" alt="Filet Mignon">
+                    <h4>Filet Mignon</h4>
+               </div>
+               
+                <div class="corte-item">
+                    <img src="Sirlon.png" alt="Sirloin">
+                    <h4>Sirloin</h4>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="seccion-cortes" id="Aves-Cerdo"> 
+            <h2>Pollo </h2>
+            <div class="cortes-grid">
+                <div class="corte-item">
+                    <img src="imagen-pechuga.png" alt=" Pollo">
+                    <h4>Pechuga </h4>
+                </div>
+                <div class="corte-item">
+                    <img src="imagen-pierna.png" alt="Pollo">
+                    <h4>Piernas</h4>
+                </div>
+                <div class="corte-item">
+                    <img src="imagen-muslo.png" alt="Pollo">
+                    <h4>Muslos</h4>
+                </div>
+                <div class="corte-item">
+                    <img src="imagen-alitas.jpeg" alt="Pollo">
+                    <h4>Alas</h4>
+                </div>
+                <div class="corte-item">
+                    <img src="imagen-polloE.jpeg" alt="Pollo">
+                    <h4>Pollo Entero </h4>
+                </div>
+                <div class="corte-item">
+                    <img src="imagen-tirasP.jpeg" alt="Pollo">
+                    <h4>Tiras de Pechuga </h4>
+                </div>
+                <div class="corte-item">
+                    <img src="nuggets.jpeg" alt="Pollo">
+                    <h4>Nuggets </h4>
+                </div>
+                <div class="corte-item">
+                    <img src="papasF.jpeg" alt="Pollo">
+                    <h4>Papas a la Francesa </h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-cortes" id="Cerdo"> 
+            <h2> Cerdo   </h2>
+            <div class="cortes-grid">
+                <div class="corte-item">
+                    <img src="imagen-costillaP.png" alt="Pechuga de cerdo">
+                    <h4>Costilla </h4>
+                </div>
+                <div class="corte-item">
+                    <img src="imagen-molidP.png" alt="Costillas de Cerdo">
+                    <h4>Molida</h4>
+                </div>
+                <div class="corte-item">
+                    <img src="imagen-bistecP.png" alt="Costillas de Cerdo">
+                    <h4>Bistec</h4>
+                </div>
+                <div class="corte-item">
+                    <img src="chuletaP.png" alt="Pechuga de cerdo">
+                    <h4>Chuleta Fresca </h4>
+                </div>
+                <div class="corte-item">
+                    <img src="imagen-long.png" alt="Costillas de Cerdo">
+                    <h4>Longaniza</h4>
+                </div>
+                <div class="corte-item">
+                    <img src="imagen-cabeza.png" alt="Costillas de Cerdo">
+                    <h4>Cabeza </h4></p>
+                </div>
+                <div class="corte-item">
+                    <img src="manitasP.jpeg" alt="Costillas de Cerdo">
+                    <h4>Manitas de Puerco</h4></p>
+                </div>
+                <div class="corte-item">
+                    <img src="chamorro.jpeg" alt="Costillas de Cerdo">
+                    <h4>Codillo </h4></p>
+                </div>
+                <div class="corte-item">
+                    <img src="alpastor.png" alt="Costillas de Cerdo">
+                    <h4>Al Pastor </h4></p>
+                </div>
+                <div class="corte-item">
+                    <img src="chicharronP.png" alt="Costillas de Cerdo">
+                    <h4>Chicharron Prensado</h4></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-cortes" id="Res"> 
+            <h2> Res </h2>
+            <div class="cortes-grid">
+                <div class="corte-item">
+                    <img src="imgen-molidaR.png" alt="Res">
+                    <h4>Molida </h4>
+                </div>
+                 
+                <div class="corte-item">
+                    <img src="imagen-faldaR.png" alt="Res">
+                    <h4>Falda</h4>
+                </div>
+                
+                <div class="corte-item">
+                    <img src="chambarete.png" alt="Res">
+                    <h4>chambarete</h4>
+                </div>
+                <div class="corte-item">
+                    <img src="suadero.png" alt="Res">
+                    <h4>Suadero en Trozo y Molido </h4>
+                </div>
+                <div class="corte-item">
+                    <img src="costilla-res.png" alt="Res">
+                    <h4>Costilla  </h4>
+                </div>
+                <div class="corte-item">
+                    <img src="retazo.jpeg" alt="Res">
+                    <h4>Retazo </h4>
+                </div>
+                <div class="corte-item">
+                    <img src="bistec.jpeg" alt="Res">
+                    <h4>Bistec</h4>
+                </div>
+                <div class="corte-item">
+                    <img src="Aguja-norteña.png" alt="Aguja norteña">
+                    <h4>Aguja norteña</h4>
+                </div>
+                <div class="corte-item">
+                    <img src="Arrachera.png" alt="Arrachera">
+                    <h4>Arrachera</h4>
+               </div>
+            </div>
+        </section>
+
+       
+
+
+        <section id="juego" class="game-section">
+    <h2>🔪🥩 ¡Adivina el Término Perfecto!  🌡️</h2>
+    <div class="game-box">
+        <h4 id="questionTitle">¿A qué temperatura interna debe cocinarse este corte?</h4> 
+        
+        <p id="cutNameDisplay" style="font-size: 1.2em; font-weight: bold;">Cargando corte...</p> 
+        
+        <p>Introduce la temperatura interna en grados Celsius (°C).</p>
+        
+        <input type="number" id="guessInput" min="40" max="80" step="0.5" placeholder="Temperatura interna (°C)">
+        
+        <button id="checkGuessButton" onclick="checkGuess()">¡Probar!</button>
+        
+        <p id="message"></p>
+        <p id="attempts"></p>
+        
+        <button id="nextCutButton" onclick="resetGame()" style="display:none; margin-top: 15px;">Siguiente Corte</button>
+    </div>
+</section>
+        
+        <section id="reflejos" class="game-section">
+            <h2>🔪 ¡Atrapa el Sabor Secreto! (Reflejos)   ⚡</h2>
+            <div class="game-box" id="reflejo-game-box">
+                <h4>Demuestra tu rapidez</h4>
+                <p>¡Haz clic en la carne cada vez que aparezca! Tienes 10 segundos.</p>
+                <div id="target-area">
+                    <div id="target-item"></div> 
+                </div>
+                <p id="timer">Tiempo: 10s</p>
+                <p id="score">Puntuación: 0</p>
+                <button id="startReflexButton" onclick="startGameReflex()">¡Comenzar a Cortar!</button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="contacto-content">
+            <div class="info-contacto">
+                <h2>Ubicación y Contacto</h2>
+                <div class="logo-container">
+                    <img src="logo2.png" alt="Logo La Blanca" class="logo-imagen">
+                   
+                  
+                <p><strong>Dirección:</strong>📍 Av Juan Rulfo 58 B, Unidad San Buenaventura, 56536 Ixtapaluca, Méx.</p>
+                <p><strong>Horario:</strong> Lunes - Sábado de 8:00 am a 5:30 pm.</p>
+            </div>
+                <a href="https://wa.me/2217851376" target="_blank" class="whatsapp-button">Abrir WhatsApp</a>
+            </div>
+            
+            <div class="mapa">
+                <iframe 
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Av%20Juan%20Rulfo%2058%20B,%20Unidad%20San%20Buenaventura,%2056536%20Ixtapaluca,%20M%C3%A9x.&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+       
+        <p class="copyright">© 2025 Carniceria y Abarrotes. LA BLANCA.</p>
+    </footer>
+
+    <script src="game-temperatura.js"></script>
+    <script src="reflejo.js"></script>
+<script defer src="scripts.js"></script>
+<script defer src="botnavi.js"></script>
+</body>
+</html>
