@@ -1,0 +1,148 @@
+/* =======================================
+      ESTILO PROFESIONAL DEL JUEGO
+   ======================================= */
+
+   .game-box {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+/* Input */
+.game-box input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Botón */
+.game-box button {
+    background-color: #c62828;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover bonito */
+.game-box button:hover {
+    background-color: #a00000;
+    transform: scale(1.05);
+}
+
+/* Texto del juego */
+#message {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+/* Intentos */
+#attempts {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ----------------------------------------
+   FONDO DE LA SECCIÓN DEL JUEGO (PARRILLA)
+----------------------------------------- */
+
+.game-section {
+    background-image: url("imagen-parrilla.png");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    border-radius: 15px;
+    margin: 40px auto;
+    color: white;
+}
+
+/* Oscurecer un poco para leer mejor */
+.game-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    border-radius: 15px;
+}
+
+/* Para que el contenido no sea afectado */
+.game-section > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* ----------------------------------------
+   RESPONSIVO PARA CELULAR
+----------------------------------------- */
+@media (max-width: 600px) {
+    .game-box {
+        padding: 20px;
+        /* CORRECCIÓN CLAVE: Asegura que la caja de juego use el 95% del ancho */
+        /* Esto deja un pequeño margen para que no toque los bordes del celular */
+        width: 95%; 
+        box-sizing: border-box; /* Fundamental: asegura que el padding no aumente el ancho total */
+        margin: 20px auto; /* Añade margen superior e inferior */
+    }
+    
+    .game-box input {
+        font-size: 1rem;
+        /* Asegura que el input no desborde si el 95% no es suficiente */
+        width: 90%; 
+        box-sizing: border-box;
+    }
+    
+    .game-box button {
+        width: 100%; /* El botón ocupa todo el ancho de la caja (95% del móvil) */
+    }
+    
+    /* Reglas para asegurar que el texto no sea demasiado grande */
+    .game-box h3 {
+        font-size: 1.2rem;
+    }
+    #message, #attempts {
+        font-size: 1rem;
+    }
+
+    /* CORRECCIÓN GLOBAL: Elimina el desborde horizontal del cuerpo */
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/* --- ESTILO PARA EL JUEGO DE REFLEJOS EN MÓVIL --- */
+
+/* La caja principal del juego (para que se centre y se limite) */
+#reflejo-game-box {
+    max-width: 95%; /* Limita el ancho en móvil */
+    margin: 30px auto; /* Centra la caja */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* El área de juego (donde se mueve el objetivo) */
+#target-area {
+    width: 100%; /* Ocupa el 100% del contenedor padre (reflejo-game-box) */
+    height: 300px; /* Reducir la altura en móvil para ahorrar espacio */
+    box-sizing: border-box;
+}
+
+/* El botón de iniciar */
+#startReflexButton {
+    width: 100%; /* Que ocupe todo el ancho para una mejor interacción táctil */
+}
